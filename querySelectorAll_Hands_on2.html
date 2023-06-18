@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Query SelectorAll() Breakthrough </title>
+<meta charset="utf-8">
+<meta name="view-port" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<h1>QuerySelectorAll() Episode2  : is a  hands On Course led by Professionals.</h1>
+<hr/>
+<h3>Adding background color to the all element below</h3>
+
+<p class="example">Hello Africans!</p>
+<p class="example">Today . Night had been quiet. All folks lie asleep . Mosquito feed on humans .Each feeds,the circle continues on and on they go without stopping.</p>
+
+<h2> Adding color to changes appearance of text  from black to blue.Note: All element has same id:</h2>
+<p id="begin">Wake up! No! Stop disturbing me. Allow me take a nap.</p>
+<p  id="begin">Morning. It begins . Later it ends. Like a cycle it repeats.</p>
+<script>
+//==>First Section
+const qSel=document.querySelectorAll(".example");
+
+//loop to get all element background color to change.
+for( var i=0;i<qSel.length;i++)
+{
+qSel[i].style.backgroundColor="blue"
+
+
+//it works like magic.But is not magic.
+
+}
+
+//==> Second Section
+qSelect=document.querySelectorAll("#begin");
+for(var n=0;n<qSelect.length;n++)
+{
+qSelect[n].style.color="blue";
+
+
+
+}
+
+
+
+</script>
+</body>
+</html>
